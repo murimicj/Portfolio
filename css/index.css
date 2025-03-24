@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+   
+    position: fixed; /* Keeps navbar fixed on top */
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: transparent; /* Initially transparent */
+    transition: background-color 0.4s ease; /* Smooth transition */
+}
+/* Scrolled navbar */
+.navbar.scrolled {
+    background-color: black;
+    opacity: 0.6; /* Your theme color */
+}
+.nav-link{
+    display: flex;
+    list-style: none;
+   
+}
+.nav-link a {
+    text-decoration: none;
+    color: wheat;
+    font-weight: bolder;
+    font-size: larger;
+}
+.nav-link li{
+   
+    margin: 0 15px;
+}
+.logo img{
+    height: 50px; /* Adjust size as needed */
+    transition: transform 0.3s ease; /* Smooth scaling */
+}
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+/* Burger menu bars */
+.bar {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 5px 0;
+    transition: transform 0.3s ease;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: transparent;
+        flex-direction: column;
+        text-align: center;
+        display: none;
+        padding: 10px 0;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+/* Footer styles */
+.footer {
+    background-color: black;
+    color: white;
+    padding: 40px 10%;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Logo section */
+.footer-logo img {
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Footer links */
+.footer-links h3,
+.footer-contact h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 5px 0;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    opacity: 1;
+}
+
+/* Contact section */
+.footer-contact p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Social icons */
+.social-icons img{
+    display: inline-block;
+    height: 30px;
+    width: 20%;
+  
+    
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    opacity: 0.5;
+}
+
+/* Footer bottom */
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo img {
+        width: 60px;
+    }
+}
+
+.hero-section{
+    
+    display: flex; /* Enables flexbox */
+    align-items: center; /* Aligns items vertically */
+    justify-content: space-between; /* Even spacing */
+    gap: 20px; /* Adds spacing between image and text */
+    padding: 50px 10%;
+}
+.hero-image{
+    flex: 1; /* Takes equal space */
+   
+}
+.hero-image img{
+    width: 100%;
+    height: 500px;
+    border-radius: 1000px; /* Optional: rounded corners */
+    box-shadow: 10px 10px 0px black; /* Solid shadow */
+}
+.hero-text {
+    flex: 1; /* Takes equal space */
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column; /* Stack vertically on small screens */
+        text-align: center;
+    }
+}
