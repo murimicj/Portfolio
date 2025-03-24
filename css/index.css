@@ -469,19 +469,21 @@
     align-items: center;
     flex-wrap: wrap; /* Wraps logos if screen is small */
     gap: 20px; /* Spacing between logos */
+    
 }
 
 /* Logo Styling */
 .logo-container img {
     width: 120px; /* Adjust logo size */
     height: auto;
-    filter: grayscale(100%); /* Optional: Makes logos black & white */
+    /* Optional: Makes logos black & white */
     transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+    z-index: 0.1;
 }
 
 /* Hover Effect: Colorize and Slight Scale */
 .logo-container img:hover {
-    filter: grayscale(0%); /* Removes black & white effect */
+    filter: grayscale(50%); /* Removes black & white effect */
     transform: scale(1.1); /* Slightly enlarge */
 }
 
