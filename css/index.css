@@ -144,8 +144,8 @@
 /* Social icons */
 .social-icons img{
     display: inline-block;
-    height: 30px;
-    width: 20%;
+    height: 20px;
+    width: 10%;
   
     
     transition: color 0.3s ease;
@@ -225,7 +225,7 @@
     width: 100%; /* 40% width of parent */
     height: 400px; /* Fixed height */
    z-index: -1;
-   box-shadow: 0px 0px 15px rgba(4, 11, 22, 0.6); /* Blue glow effect */
+  
     position: relative; /* Needed for pseudo-element */
     /* box-shadow: -10px 200px 0px black; /* Shadow only on lower half left */
 } 
