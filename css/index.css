@@ -177,8 +177,11 @@
     margin-top: 20px;
     font-size: 12px;
     opacity: 0.8;
+    
 }
-
+.footer-bottom a{
+    color: wheat;
+}
 /* Responsive */
 @media (max-width: 768px) {
     .footer-container {
