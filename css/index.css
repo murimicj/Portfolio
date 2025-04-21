@@ -142,15 +142,32 @@
 }
 
 /* Social icons */
-.social-icons img{
-    display: inline-block;
-    height: 20px;
-    width: 10%;
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
   
-    
-    transition: color 0.3s ease;
-}
-
+  .social-icons img {
+    height: auto;
+    width: 32px; /* fixed size is better for small icons */
+    max-width: 100%;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.1); /* nice hover effect */
+  }
+  
+  /* Optional media query for smaller devices */
+  @media (max-width: 480px) {
+    .social-icons img {
+      width: 28px;
+    }
+  }
+  
 .social-icons a:hover {
     opacity: 0.5;
 }
